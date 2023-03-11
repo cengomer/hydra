@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {Contact,CopyRights,Footer,Hero,How,Intro,Navbar,Tech,Why} from './components'
+import { Vector1,Vector2,Vector3,Vector4 } from './assets/imports';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='bg-[#302C42] p-12'>
+   <Navbar/>
+   <div className='relative'>
+   <Hero/>
+   </div>
+   <Intro/>
+   <Why/>
+   <Tech/>
+   <How/>
+   <Contact/>
+   <Footer/>
+   <div className='w-full h-full flex justify-center items-center '>
+   <div className='md:w-[1269px] w-[289px] h-[0.1px] bg-primary mt-20'/>
+   </div>
+   <CopyRights/>
+   </div>
   );
 }
 
